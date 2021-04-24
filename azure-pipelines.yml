@@ -12,7 +12,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'ee80395c-7906-4602-abe0-f1a90ab48cb2'
+  dockerRegistryServiceConnection: '55ce5a67-2997-4430-b38d-4894d00b58b3'
   imageRepository: 'super-pizza-trainer'
   containerRegistry: 'rarepizzascontainers.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
