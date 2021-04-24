@@ -3,7 +3,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 pr:
-  - main
+  branches:
+    include: 
+    - main
+  drafts: false
 
 resources:
 - repo: self
