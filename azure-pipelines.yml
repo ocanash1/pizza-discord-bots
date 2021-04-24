@@ -17,6 +17,7 @@ variables:
   containerRegistry: 'rarepizzascontainers.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
+  latestTag: 'latest'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -39,3 +40,4 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+          $(latestTag)
