@@ -13,7 +13,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'b58951ab-e271-4714-9d98-3f2b014c1eca'
-  imageRepository: 'superpizzatrainer'
+  imageRepository: 'super-pizza-trainer'
   containerRegistry: 'rarepizzascontainers.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
